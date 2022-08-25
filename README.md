@@ -6,7 +6,6 @@ The Cluedo Sheet - An interactive detective sheet for Cluedo / Clue board game
 
 # TODO
 
-- Support i18n
 - Provide customization, such as: the suspect list
 
 # Technic

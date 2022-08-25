@@ -117,8 +117,8 @@ function onLocaleBtnClicked(): void {
 </script>
 
 <template>
-  <div class="absolute inset-0 flex flex-col justify-between items-center">
-    <div class="grow min-h-0 overflow-y-auto">
+  <div class="fixed inset-0 flex flex-col justify-between items-stretch">
+    <div class="grow min-h-0 w-full overflow-y-auto">
       <div class="p-2 flex justify-between items-center">
         <div class="grow text-2xl">
           {{ la.t("gameName") }}
@@ -140,7 +140,7 @@ function onLocaleBtnClicked(): void {
           <SvgIcon class="text-gray-600" :path="mdiGithub" :size="20"></SvgIcon>
         </a>
       </div>
-      <table class="w-full">
+      <table class="w-full m-auto">
         <tr>
           <td class="title">
             {{ la.t("title.who") }}

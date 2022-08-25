@@ -1,0 +1,59 @@
+{
+  "translation": {
+    "gameName": "Cluedo",
+    "title": {
+      "who": "Who ?",
+      "what": "What ?",
+      "where": "Where ?"
+    },
+    "suspect": {
+      "mustard": {
+        "name": "Colonel Mustard",
+        "short": "M"
+      },
+      "plum": {
+        "name": "Professor Plum",
+        "short": "P"
+      },
+      "green": {
+        "name": "Rev Green",
+        "short": "G"
+      },
+      "peacock": {
+        "name": "Mrs. Peacock",
+        "short": "B"
+      },
+      "scarlett": {
+        "name": "Miss Scarlett",
+        "short": "S"
+      },
+      "orchid": {
+        "name": "Dr Orchid",
+        "short": "O"
+      },
+      "white": {
+        "name": "Mrs. White",
+        "short": "W"
+      }
+    },
+    "weapon": {
+      "dagger": "Dagger",
+      "candlestick": "Candlestick",
+      "revolver": "Revolver",
+      "rope": "Rope",
+      "leadPipe": "Lead Pipe",
+      "wrench": "Wrench"
+    },
+    "room": {
+      "hall": "Hall",
+      "lounge": "Lounge",
+      "diningRoom": "Dining Room",
+      "kitchen": "Kitchen",
+      "ballroom": "Ballroom",
+      "conservatory": "Conservatory",
+      "billiardRoom": "Billiard Room",
+      "library": "Library",
+      "study": "Study"
+    }
+  }
+}

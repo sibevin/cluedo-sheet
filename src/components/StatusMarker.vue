@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, defineExpose } from "vue";
+import { ref, computed } from "vue";
 import SvgIcon from "./SvgIcon.vue";
 import type { StatusDisplay } from "../types/statusTypes";
 import { Status, StatusDisplayMap } from "../types/statusTypes";

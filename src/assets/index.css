@@ -7,13 +7,12 @@ table {
 }
 
 .title {
-  @apply bg-black text-white;
+  @apply bg-black text-white px-2;
 }
 
 td {
   @apply w-full border border-black;
 }
-
 
 .header {
   @apply font-bold text-right px-2;

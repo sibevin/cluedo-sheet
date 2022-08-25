@@ -2,6 +2,8 @@
 
 The Cluedo Sheet - An interactive detective sheet for Cluedo / Clue board game
 
+[Sheet](https://sibevin.github.io/cluedo-sheet/)
+
 # TODO
 
 - Support i18n

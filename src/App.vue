@@ -17,6 +17,7 @@ import {
   mdiStove,
   mdiChandelier,
   mdiBookOpenVariant,
+  mdiGithub,
 } from "@mdi/js";
 import SvgIcon from "./components/SvgIcon.vue";
 import StatusMarker from "./components/StatusMarker.vue";
@@ -134,7 +135,12 @@ function markerBtnIcon(btnStatus: Status): string {
 <template>
   <div class="absolute inset-0 flex flex-col justify-between items-center">
     <div class="grow min-h-0 overflow-y-auto">
-      <div class="text-2xl p-2">妙探尋兇 Cluedo</div>
+      <div class="p-2 flex justify-between items-center">
+        <div class="grow text-2xl">妙探尋兇 Cluedo</div>
+        <a href="https://github.com/sibevin/cluedo-sheet" target="_blank">
+          <SvgIcon class="text-gray-600" :path="mdiGithub" :size="20"></SvgIcon>
+        </a>
+      </div>
       <table class="w-full">
         <tr>
           <td class="title">誰殺的 Who ?</td>

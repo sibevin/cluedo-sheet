@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+table {
+  @apply w-full border border-black max-w-md;
+}
+
+.title {
+  @apply bg-black text-white;
+}
+
+td {
+  @apply w-full border border-black;
+}
+
+
+.header {
+  @apply font-bold text-right px-2;
+}

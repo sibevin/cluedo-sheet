@@ -52,7 +52,6 @@ export function localeOptions(): { label: string; value: string }[] {
 export function detectLocalLocale(): string {
   const preferredLangs = window.navigator.languages;
   const localLocale = preferredLangs.filter((value) => {
-    console.log(value);
     return Object.keys(LOCALE_DATA).includes(value);
   })[0];
   return localLocale || DEFAULT_LOCALE;

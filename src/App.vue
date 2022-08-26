@@ -77,6 +77,8 @@ const markerRefMap = ref<Record<string, MarkerType>>({});
 const currentLocale = ref<string>(detectLocalLocale());
 initLocale(currentLocale.value);
 const la = new LocaleActor(currentLocale.value);
+const urlQuery = new URLSearchParams(window.location.search);
+const isSuspectColShown = ref(urlQuery.get("sc"));
 
 function storeMarkerRef(el: MarkerType | null, markerIndex: string): void {
   if (el) {
@@ -149,7 +151,7 @@ function onLocaleBtnClicked(): void {
             v-for="(suspect, index) in suspects"
             :key="index"
             class="header p-1 bg-black"
-            :class="suspect.color"
+            :class="isSuspectColShown ? suspect.color : 'text-black'"
           >
             {{ la.t(`suspect.${suspect.code}.short`) }}
           </td>
@@ -179,7 +181,7 @@ function onLocaleBtnClicked(): void {
             v-for="(suspect, index) in suspects"
             :key="index"
             class="header p-1 bg-black"
-            :class="suspect.color"
+            :class="isSuspectColShown ? suspect.color : 'text-black'"
           >
             {{ la.t(`suspect.${suspect.code}.short`) }}
           </td>
@@ -208,7 +210,7 @@ function onLocaleBtnClicked(): void {
             v-for="(suspect, index) in suspects"
             :key="index"
             class="header p-1 bg-black"
-            :class="suspect.color"
+            :class="isSuspectColShown ? suspect.color : 'text-black'"
           >
             {{ la.t(`suspect.${suspect.code}.short`) }}
           </td>

@@ -119,7 +119,7 @@ function onLocaleBtnClicked(): void {
 <template>
   <div class="fixed inset-0 flex flex-col justify-between items-stretch">
     <div class="grow min-h-0 w-full overflow-y-auto">
-      <div class="p-2 flex justify-between items-center">
+      <div class="m-auto p-2 max-w-md flex justify-between items-center">
         <div class="grow text-2xl">
           {{ la.t("gameName") }}
         </div>
